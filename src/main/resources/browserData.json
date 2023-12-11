@@ -1,0 +1,52 @@
+{
+  "Chrome": {
+    "browserName": "chrome",
+    "args": [
+      "--no-headless",
+      "--window-size=1900,1600",
+      "--no-sandbox",
+      "--start-maximized",
+      "--ignore-certificate-errors",
+      "--disable-infobars",
+      "--disable-dev-shm-usage",
+      "--disable-browser-side-navigation",
+      "--disable-gpu",
+      "--remote-allow-origins=*"
+    ]
+  },
+  "Firefox": {
+    "browserName": "firefox",
+    "args": [
+      "--headless",
+      "--width=1900",
+      "--height=1600",
+      "--no-sandbox",
+      "--start-maximized",
+      "--ignore-certificate-errors",
+      "--disable-infobars",
+      "--disable-dev-shm-usage",
+      "--disable-browser-side-navigation",
+      "--disable-gpu"
+    ],
+    "webdriverAcceptUntrustedCerts": true,
+    "webdriverAssumeUntrustedIssuer": false
+  },
+  "Edge": {
+    "args": [
+      "--no-headless",
+      "--window-size=800,600",
+      "--no-sandbox",
+      "--start-maximized",
+      "--ignore-certificate-errors",
+      "--disable-infobars",
+      "--disable-dev-shm-usage",
+      "--disable-browser-side-navigation",
+      "--disable-gpu"
+    ]
+  },
+  "Safari": {
+    "browserName": "safari",
+    "args": [
+    ]
+  }
+}
