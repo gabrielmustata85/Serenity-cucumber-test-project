@@ -3,8 +3,11 @@ Feature: Search car
   Scenario: Search car by name
     Given User is logged in
     And User goes to the car listing page
-    And User types in the search bar a car name
-    When User press the search button
+    When User searches for cars with names
+      | CarName  |
+      | Toyota   |
+      | Honda    |
+      | Ford     |
     Then The results should be visible
 
   Scenario: Search car by year
